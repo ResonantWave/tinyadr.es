@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			if($_SERVER["REQUEST_URI"] == "/index.php?url=") {
 				header("Location: /");
 			} else {
-				$shortUrl = substr($_SERVER["REQUEST_URI"], -5); // screw it. (╯°□°）╯︵ ┻━┻
+				$shortUrl = str_replace("/index.php?url=", "", $_SERVER["REQUEST_URI"]);
 			}
 		} else {
 			$shortUrl = (preg_replace('/\//', '', $_SERVER["REQUEST_URI"], 1));
