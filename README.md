@@ -36,7 +36,7 @@ url.rewrite-final = (
 
 ### Known bugs
 
-When first visited, a 404 will be thrown and the URL will be https://tinyadr.es/index.php?url=
+~~When first visited, a 404 will be thrown and the URL will be https://tinyadr.es/index.php?url=~~ Fixed!
 
 ### Contributors
  *  [@ResonantWave](https://github.com/ResonantWave)
